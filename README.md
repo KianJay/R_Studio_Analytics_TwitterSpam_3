@@ -7,7 +7,7 @@ R_Studio_Analytics_TwitterSpam_3</br>
 We started to study supervised learning and to understand supervised algorithms. 
 In this assessment,<br> you will apply supervised machine learning methods to classify Twitter spam using the provided dataset. Table 1 shows the features description of the dataset.<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938480-cf7ab580-6fc8-11eb-928f-f931b392a2a1.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938480-cf7ab580-6fc8-11eb-928f-f931b392a2a1.png" />
  
 Twitter spam detection using R caret package
 Follow instructions, complete all the tasks and organize your answers into an essay.<br> R script, R screenshot, your results and explanations should be covered for each question.
@@ -22,8 +22,8 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	set.seed() function sets the starting number that is used to generate a sequence of random numbers.<br>
 •	TwitterSpamSplit, TwitterSpamTrain and TwitterSpamTest are set  the training and test with the ratio of 8:2<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938489-d275a600-6fc8-11eb-8860-17fec5c05e75.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938500-d73a5a00-6fc8-11eb-8b22-d09c37b03c16.png" />
+<img  src="https://user-images.githubusercontent.com/54985943/107938489-d275a600-6fc8-11eb-8860-17fec5c05e75.png" />
+<img  src="https://user-images.githubusercontent.com/54985943/107938500-d73a5a00-6fc8-11eb-8b22-d09c37b03c16.png" />
 
 <h3>2.	Use training dataset to train a machine learning model with the random forest algorithm for Twitter spam classification </h3>
 •	To use training dataset to train a machine learning model with the random forest algorithm for Twitter spam classification: I use “caret” library that is used for classification and Regression Training; Random Forest algorithms.<br>
@@ -36,9 +36,9 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	Splitrule stands for splitting rule. For classification and probability estimation.<br>
 •	Kappa is classification accuracy.<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938516-ddc8d180-6fc8-11eb-95e0-9432281d07fc.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938522-e02b2b80-6fc8-11eb-9c59-16a7f570c346.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938529-e1f4ef00-6fc8-11eb-9b5d-dc82217a3273.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938516-ddc8d180-6fc8-11eb-95e0-9432281d07fc.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938522-e02b2b80-6fc8-11eb-9c59-16a7f570c346.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938529-e1f4ef00-6fc8-11eb-9b5d-dc82217a3273.png" />
 
 <h3>3.	Use testing dataset to test and evaluate the model trained in step 2 and print the confusion matrix.  </h3>
 •	To use testing dataset to test and evaluate the model trained in step 2.<br> firstly, command : TwitterSpamRFPred <- predict(RF_model, TwitterSpamTest) to set the prediction variable, <br>
@@ -46,8 +46,8 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	To print the confusion matrix. Predict the outcome on TwitterSpamTest.: confusionMatrix(TwitterSpamRFPred, as.factor(TwitterSpamTest$label)<br>
 •	confusionMatrix functions is used to compare predicted outcome and true outcome. where I can find accuracy 0.97 and kappa 0.94.<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938538-e4efdf80-6fc8-11eb-9f02-d15821524ca1.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938541-e6210c80-6fc8-11eb-86f7-82b99d2b82f0.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938538-e4efdf80-6fc8-11eb-9f02-d15821524ca1.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938541-e6210c80-6fc8-11eb-86f7-82b99d2b82f0.png" />
 
 
 <h3>4.	Use training dataset to train another machine learning model with the K Nearest neighbours algorithm.</h3>
@@ -59,8 +59,8 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	Kmax is maximum number of k, if ks is not specified.<br>
 •	Kappa is classification accuracy.<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938603-fa650980-6fc8-11eb-96b4-ee1af1f3a8bb.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938611-fc2ecd00-6fc8-11eb-84f4-ce9018d2a129.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938603-fa650980-6fc8-11eb-96b4-ee1af1f3a8bb.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938611-fc2ecd00-6fc8-11eb-84f4-ce9018d2a129.png" />
 
 <h3>5.	Use testing data to test and evaluate the model trained in step 4 and print the confusion matrix.  </h3>
 •	To use testing dataset to test and evaluate the model trained in step 4.<br> firstly, command : TwitterSpamKnnPred <- predict(Knn_model, TwitterSpamTest)<br>
@@ -68,8 +68,8 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	To print the confusion matrix. Predict the outcome on TwitterSpamTest.: confusionMatrix(TwitterSpamKnnPred, as.factor(TwitterSpamTest$label)<br>
 •	confusionMatrix functions is used to compare predicted outcome and true outcome. where I can find accuracy 0.91 and kappa 0.82.<br>
 
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938626-00f38100-6fc9-11eb-9ab3-f5000f2b3d09.png" />
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938632-02bd4480-6fc9-11eb-9a85-d05911fb3e65.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938626-00f38100-6fc9-11eb-9ab3-f5000f2b3d09.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938632-02bd4480-6fc9-11eb-9a85-d05911fb3e65.png" />
 
 
 <h3>6.	Comparing the performance of Twitter spam classifiers established in step 2 and step 4,<br> which algorithm can achieve better prediction results for this Twitter spam detection task? Why?</h3>
@@ -82,7 +82,7 @@ Follow instructions, complete all the tasks and organize your answers into an es
 •	Therefore, the Random Forest has better prediction results for this Twitter spam detection task with higher accuracy and kappa on model and confusion matrix.<br>
 
 <h3> Conclusion </h3>
-<img width="500" height="auto" src="https://user-images.githubusercontent.com/54985943/107938666-0fda3380-6fc9-11eb-80a3-9ea6f8502dec.png" />
+<img src="https://user-images.githubusercontent.com/54985943/107938666-0fda3380-6fc9-11eb-80a3-9ea6f8502dec.png" />
 
 •	In conclusion, I implemented set.seed function to randomly split the dataset to training dataset and testing dataset with the ratio of 8:2 so I could use it to train the data with the random forest and k nearest neighbour algorithm for TwitterSpam classification using “caret” library. Also, I learned how to train the dataset using ranger method for random forest, and kknn method for k-nearest neighbour. In addition, I went through the confusion matrix for both random forest and k-nearest neighbour with confusionMatrix() functions. And finally I compared random forest with k-nearest neighbour to distinguish which algorithm can achieve better prediction results for this Twitter spam detection task and found out the Random Forest has better prediction results for this Twitter spam detection task with higher accuracy and kappa on model and confusion matrix.<br>
   
